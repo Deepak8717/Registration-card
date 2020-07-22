@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:#f1f3fb;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;    
+}
+
+.card{
+    background-color:#fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0 rgba(#999, 0.25);
+    padding:20px;
+    margin-top:2rem;
+    width: 100%;
+    max-width: 425px;
+    
+}
+.card-image{
+    background-image: url("https://assets.codepen.io/285131/coffee_1.jpg");
+    padding-bottom: 35%;
+    background-size: 150%;
+    border-radius: 8px;
+    padding-top:30px;
+    padding-left:30px;
+    padding-right: 30px;
+    line-height: 1.2;
+    color: #735400;
+    .card-heading{
+        font-size: 30px;
+    }
+    small{
+        display: block;
+        font-size: 21px;
+        font-weight: 400;
+    }
+}
+.card-form{
+    margin:20px 10px;
+    .input{
+        display: flex;
+        flex-direction: column;
+        padding-top:20px;
+        .input-label{
+            color:#6658d3;
+            font-weight: 500;
+            font-size: 18px;
+            transition: 2s ease;
+            margin-bottom:5px;
+        }
+        .hidden{
+            visibility: hidden;
+            & +.input-field{
+                margin-top: -15px;
+            }
+        }
+        
+        .input-field{
+            border:0;
+            border-bottom: 2px solid #6658d3;
+            font-size: 17px;
+            line-height: 1.5;
+            text-transform: capitalize;
+            color:rgb(146, 145, 145);
+            &:focus{
+                color:#000;
+                outline: 0;
+            }
+        }
+                
+    }
+    .action{
+        margin-top: 2rem;
+        .action-button{
+            font:inherit;
+            font-size: 17px;
+            width:100%;
+            font-weight: 500;
+            padding:1em;
+            background-color: #6658d3;
+            border:0;
+            color:#fff;
+            border-radius: 10px;
+        }
+    }
+}
+.card-info{
+    padding:1rem 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #8597a3;
+    a{
+        display: block;
+        text-decoration: none;
+    }
+}
+
+
